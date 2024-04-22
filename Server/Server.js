@@ -20,10 +20,10 @@ fs.readFile('index.html', (err, data) => {
 const http = require("http");
 
 http.createServer((req, res) => {
-    console.log('request was made ');
+    //console.log('request was made ');
   res.setHeader('Content-Type','text/html');
-  res.write(html)
-  res.end()
+  //res.write(html)
+  res.end('Request made ')
 }).listen(3000, 
     () => {
   console.log("i got a request");
